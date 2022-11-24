@@ -1,0 +1,190 @@
+/* Initialize margins and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+#BoxLogoAndSocialNetwork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+#Logo {
+    display: block;
+
+    margin-left: 50px;
+}
+
+#HrSocialNetwork {
+    height: 10px;
+}
+
+#iconSocialNetwork {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#BoxSocialNetwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+nav {
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+#boxButtonMobileNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+
+    background: rgb(93,144,21);
+    background: linear-gradient(323deg, rgba(93,144,21,1) 22%, rgba(122,190,28,1) 100%);
+}
+
+#ButtonMobileNavBar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+    background-color: white;
+}
+
+#checkBoxButtonMobileNavBar {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    bottom: 44px;
+
+    opacity: 0%;
+}
+
+#checkBoxButtonMobileNavBar:checked + #boxLink {
+    display: flex;
+}
+
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar1 {
+    animation-name: NavBarOpacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar2 {
+    animation-name: NavBarOpacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar3 {
+    animation-name: NavBarOpacity;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#boxLink {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+
+    right: 150px;
+    bottom: 40px;
+
+    width: 340px;
+}
+
+#linkNavBar1 {
+    margin-top: 5px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+
+#linkNavBar2 {
+    margin-top: 10px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+
+#linkNavBar3 {
+    margin-top: 10px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+
+@keyframes NavBarOpacity {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+#linkNavBar1:hover {
+    animation-name: ColorButton;
+    animation-duration: 3s;
+}
+
+#linkNavBar2:hover {
+    animation-name: ColorButton;
+    animation-duration: 3s;
+}
+
+#linkNavBar3:hover {
+    animation-name: ColorButton;
+    animation-duration: 3s;
+}
+
+@keyframes ColorButton {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(0, 0, 0);
+    }
+}
