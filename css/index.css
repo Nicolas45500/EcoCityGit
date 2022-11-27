@@ -8,6 +8,11 @@ body {
     height: 100vh;
 }
 
+p, a {
+    font-family: 'Alice', serif;
+    font-family: 'Libre Bodoni', serif;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -48,8 +53,17 @@ header {
     margin-right: 50px;
 }
 
+#BoxSocialNetwork a {
+    height: 15px;
+
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     margin-top: 20px;
+
+    z-index: 3;
 
     width: 100%;
 }
@@ -165,26 +179,133 @@ nav {
     }
 }
 
-#linkNavBar1:hover {
-    animation-name: ColorButton;
-    animation-duration: 3s;
+#boxButtonDesktopNavBar {
+    position: relative;
+
+    top: 20px;
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60px;
+    width: 80%;
+
+    border-radius: 25px;
+    background: rgb(93,144,21);
+    background: linear-gradient(323deg, rgba(93,144,21,1) 22%, rgba(122,190,28,1) 100%);
 }
 
-#linkNavBar2:hover {
-    animation-name: ColorButton;
-    animation-duration: 3s;
+#linkNavBarDesktop1 {
+    text-decoration: none;
+    color: white;
 }
 
-#linkNavBar3:hover {
-    animation-name: ColorButton;
-    animation-duration: 3s;
+#linkNavBarDesktop1:hover {
+    font-size: 18px;
 }
 
-@keyframes ColorButton {
-    from {
-        color: white;
+#linkNavBarDesktop2 {
+    text-decoration: none;
+    color: white;
+}
+
+#linkNavBarDesktop3:hover {
+    font-size: 18px;
+}
+
+#linkNavBarDesktop3 {
+    text-decoration: none;
+    color: white;
+}
+
+#linkNavBarDesktop2:hover {
+    font-size: 18px;
+}
+
+#backGround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    bottom: 50px;
+
+    z-index: 1;
+
+    height: 500px;
+    width: 100%;
+
+    background-image: url('../img/background/nature.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#boxBackgroundDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleH1 {
+    text-align: center;
+    font-size: 35px;
+
+    color: white;
+}
+
+#paragrapheDescriptif {
+    font-size: 17px;
+    
+    color: white;
+}
+
+#boxButtonBackground {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 290px;
+}
+
+#boxButtonBackground a {
+    padding: 10px 20px 10px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#boxButtonBackground a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 3px solid white;
+}
+
+
+@media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    to {
-        color: rgb(0, 0, 0);
+
+    #boxButtonMobileNavBar {
+        display: none;
     }
-}
+
+    #boxButtonDesktopNavBar {
+        display: flex;
+    }
+
+    #backGround {
+        background-position: bottom;
+    }
+  }
