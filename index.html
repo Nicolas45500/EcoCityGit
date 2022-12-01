@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- [ Links for adding fonts ] -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Libre+Bodoni:ital,wght@1,500&display=swap" rel="stylesheet">
-
+    <!-- [ links for adding the Index style index.css ] -->
     <link rel="stylesheet" href="/css/index.css">
     <title>EcoCity</title>
 </head>
 <body>
     <header>
+        <!-- [ the container of the logo of the site and social networks in SVG ] -->
         <section id="BoxLogoAndSocialNetwork">
             <img src="/img/logo/EcoCity.png" alt="Logo du site" width="80px" id="Logo"/>
             <div id="BoxSocialNetwork">
@@ -39,8 +40,11 @@
 
             </div>
         </section>
+        
         <nav>
+            <!-- [ The navigation bar for mobile mode ] -->
             <div id="boxButtonMobileNavBar">
+                <!-- [ button for the navigation bar in mobile mode in pure CSS with an icon in SVG ] -->
                 <div id="ButtonMobileNavBar">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4Z" fill="currentColor" />
@@ -48,7 +52,9 @@
                         <path d="M3 14C3 13.4477 3.44772 13 4 13H20C20.5523 13 21 13.4477 21 14C21 14.5523 20.5523 15 20 15H4C3.44772 15 3 14.5523 3 14Z" fill="currentColor" />
                         <path d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z" fill="currentColor" />
                     </svg>
+                    <!-- [ Checkbox that detects if the menu and open or close ] -->
                     <input type="checkbox" name="checkBoxButtonMobileNavBar" id="checkBoxButtonMobileNavBar" >
+                    <!-- [ container that encompasses the different navigation link ] -->
                     <div id="boxLink">
                         <a href="" id="linkNavBar1">Accueil</a>
                         <a href="" id="linkNavBar2">Evenement</a>
@@ -56,13 +62,14 @@
                     </div>
                 </div>
             </div>
-
+            <!-- [ container for the navigation bar in computer mode. ] -->
             <div id="boxButtonDesktopNavBar">
                 <a href="" id="linkNavBarDesktop1">Accueil</a>
                 <a href="" id="linkNavBarDesktop2">Evenement</a>
                 <a href="" id="linkNavBarDesktop3">L'histoire</a>
             </div>
         </nav>
+        <!-- [ section that contains the main illustration of the page and it is text and button ] -->
         <section id="backGround">
             <div id="boxBackgroundDescription">
                 <h1 id="titleH1">EcoCity <br />Rejoignez nous</h1>
@@ -76,5 +83,41 @@
             </div>
         </section>
     </header>
+
+    <main>
+        <h2 id="titleInfoEnvironement">la nature crie</h2>
+        <!-- [ container that serves as a grid for items ] -->
+        <div id="gridBoxInfo">
+            <!-- [ Item container 1 ] -->
+            <div class="boxInfoEnvironement1">
+                <!-- [ Item information container 1 ] -->
+                <div class="descriptionInfoEnvironement1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vel sunt maiores distinctio repudiandae expedita fugit sint. Error dicta, facilis possimus quibusdam perferendis, 
+                        omnis totam sint iste dolore ab eligendi dolorum? <br><a href="#">Lire la suite</a>
+                    </p>
+                </div>
+                <!-- [ Article image 1 ] -->
+                <div class="imageInfoEnvironement1"></div>
+            </div>
+
+            <!-- ..... comment that serves as a separation of articles ...... -->
+
+            <!-- [ Item container 2 ] -->
+            <div class="boxInfoEnvironement2">
+                <!-- [ Item information container 2 ] -->
+                <div class="descriptionInfoEnvironement2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vel sunt maiores distinctio repudiandae expedita fugit sint. Error dicta, facilis possimus quibusdam perferendis, 
+                        omnis totam sint iste dolore ab eligendi dolorum? <br><a href="#">Lire la suite</a>
+                    </p>
+                </div>
+                <!-- [ Article image 2 ] -->
+                <div class="imageInfoEnvironement2"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

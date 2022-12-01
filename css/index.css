@@ -3,74 +3,63 @@
     margin: 0;
     padding: 0;
 }
-
+/* make sure that the body takes the full size of the screen */
 body {
     height: 100vh;
 }
-
+/* add all the same style between element P and A */
 p, a {
     font-family: 'Alice', serif;
     font-family: 'Libre Bodoni', serif;
 }
-
+/* Put the elements of the page header one below the other with FLLEX */
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     margin-top: 20px;
 }
-
+/* Position the header logo on the left and the header social network on the right */
 #BoxLogoAndSocialNetwork {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
 }
-
+/* Peel the logo off the header from the edge of the page */
 #Logo {
-    display: block;
-
     margin-left: 50px;
 }
-
-#HrSocialNetwork {
-    height: 10px;
-}
-
-#iconSocialNetwork {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
+/* peel the social networks off the header of the edge of the page, then center them */
 #BoxSocialNetwork {
     display: flex;
-    justify-content: center;
     align-items: center;
 
     margin-right: 50px;
 }
-
+/* agrendate HR at height */
+#HrSocialNetwork {
+    height: 10px;
+}
+/* Add a margin to the left and right of each social network logo */
+#iconSocialNetwork {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* on all A links in the BoxSocialNetwork container add a height of 15 px and remove the style of the default A links, add the color in black */
 #BoxSocialNetwork a {
     height: 15px;
 
     text-decoration: none;
     color: black;
 }
-
+/* add a margin in height for the container of the Navigation bar, and put the Navigation bar in the foreground */
 nav {
     margin-top: 20px;
 
     z-index: 3;
-
-    width: 100%;
 }
-
+/* container of the navigation bar button for mobile mode, */
 #boxButtonMobileNavBar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -289,6 +278,119 @@ nav {
     border: 3px solid white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridBoxInfo {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
+
+    grid-gap: 30px;
+}
+
+#titleInfoEnvironement {
+    margin-bottom: 20px;
+}
+
+.boxInfoEnvironement1 {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: 400px;
+}
+
+.descriptionInfoEnvironement1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+
+    background-color: #2d3129;
+}
+
+.descriptionInfoEnvironement1 p {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #bd994c;
+}
+
+.descriptionInfoEnvironement1 p a {
+    color: rgb(255, 255, 255);
+}
+
+.imageInfoEnvironement1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+
+    background-image: url('../img/background/glacier.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.boxInfoEnvironement2 {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: 400px;
+}
+
+.descriptionInfoEnvironement2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+
+    background-color: #2d3129;
+}
+
+.descriptionInfoEnvironement2 p {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #bd994c;
+}
+
+.descriptionInfoEnvironement2 p a {
+    color: rgb(255, 255, 255);
+}
+
+.imageInfoEnvironement2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+
+    background-image: url('../img/background/can.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
 @media screen and (min-width: 800px) {
     nav {
@@ -307,5 +409,9 @@ nav {
 
     #backGround {
         background-position: bottom;
+    }
+
+    #gridBoxInfo {
+        grid-template-columns: 400px 400px;
     }
   }
