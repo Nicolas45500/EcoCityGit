@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [ Links for adding fonts ] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Libre+Bodoni:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- [ links for adding the Index style histoire.css ] -->
+    <link rel="stylesheet" href="/css/histoire.css">
+    <title>EcoCity</title>
+</head>
+<body>
+    <header>
+        <!-- [ the container of the logo of the site and social networks in SVG ] -->
+        <section id="BoxLogoAndSocialNetwork">
+            <img src="/img/logo/EcoCity.png" alt="Logo du site" width="80px" id="Logo"/>
+            <div id="BoxSocialNetwork">
+
+                <hr id="HrSocialNetwork">
+                <a href="#">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="iconSocialNetwork" >
+                        <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="#">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="iconSocialNetwork" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z" fill="currentColor" />
+                </svg>
+                </a>
+                <a href="#">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="iconSocialNetwork" >
+                    <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z" fill="currentColor" />
+                </svg>
+                </a>
+
+                <hr id="HrSocialNetwork">
+
+            </div>
+        </section>
+        
+        <nav>
+            <!-- [ The navigation bar for mobile mode ] -->
+            <div id="boxButtonMobileNavBar">
+                <!-- [ button for the navigation bar in mobile mode in pure CSS with an icon in SVG ] -->
+                <div id="ButtonMobileNavBar">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4Z" fill="currentColor" />
+                        <path d="M4 9C3.44772 9 3 9.44772 3 10C3 10.5523 3.44772 11 4 11H20C20.5523 11 21 10.5523 21 10C21 9.44772 20.5523 9 20 9H4Z" fill="currentColor" />
+                        <path d="M3 14C3 13.4477 3.44772 13 4 13H20C20.5523 13 21 13.4477 21 14C21 14.5523 20.5523 15 20 15H4C3.44772 15 3 14.5523 3 14Z" fill="currentColor" />
+                        <path d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z" fill="currentColor" />
+                    </svg>
+                    <!-- [ Checkbox that detects if the menu and open or close ] -->
+                    <input type="checkbox" name="checkBoxButtonMobileNavBar" id="checkBoxButtonMobileNavBar" >
+                    <!-- [ container that encompasses the different navigation link ] -->
+                    <div id="boxLink">
+                        <a href="index.html" id="linkNavBar1">Accueil</a>
+                        <a href="env.html" id="linkNavBar2">Evenement</a>
+                        <a href="histoire.html" id="linkNavBar3">L'histoire</a>
+                    </div>
+                </div>
+            </div>
+            <!-- [ container for the navigation bar in computer mode. ] -->
+            <div id="boxButtonDesktopNavBar">
+                <a href="index.html" id="linkNavBarDesktop1">Accueil</a>
+                <a href="env.html" id="linkNavBarDesktop2">Evenement</a>
+                <a href="histoire.html" id="linkNavBarDesktop3">L'histoire</a>
+            </div>
+        </nav>
+        <!-- [ section that contains the main illustration of the page and it is text and button ] -->
+        <section id="backGround">
+            <div id="boxBackgroundDescription">
+                <h1 id="titleH1">EcoCity <br />Rejoignez nous</h1>
+                <p id="paragrapheDescriptif">
+                    vivons avec la nature pas contre la nature
+                </p>
+                <div id="boxButtonBackground">
+                    <a href="histoire.html">un peut de l'ecture</a>
+                    <a href="env.html#sectionContact">Contact</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <h2 id="titleInfoEnvironement">histoire</h2>
+        <div id="boxHistoire">
+            <!-- [ Text on history ] -->
+            <p id="textHistoire">
+                À l’origine, Patrick Scheyder est pianiste. Mais depuis 10 ans,
+                il s’est spécialisé sur un sujet très particulier : l’histoire de l’écologie.
+                Il organise des spectacles qui interrogent notre rapport à la biodiversité, 
+                puise dans les textes des auteurs et autrices célèbres et a écrit plusieurs ouvrages avec des personnalités référentes. 
+                En octobre 2020 sortira le prochain, aux éditions Belin. On y retrouvera le neuropsychiatre Boris Cyrulnik, 
+                à qui l’on doit la vulgarisation du concept de « résilience », et l’historien Benjamin Stora.
+                Interview.
+                Patrick Scheyder : L’écologie fait partie des sujets de société les plus discutés. 
+                On ne peut pas se permettre de ne pas connaître son histoire ! Sinon, comment nous situer dans le débat, 
+                qui cristallise des oppositions parfois très fortes entre les gouvernements et les citoyens ? 
+                Si l’on imagine que ces oppositions sont nées avec l’ « apparition » du dérèglement climatique, 
+                on occulte une part importante de l’histoire. Et nos choix, nos décisions en seront forcément impactés. 
+                Ou plutôt, nos manques de choix et de décisions. Il faut bien reconnaître qu’en 40 ans, 
+                les choses n’ont guère bougé : nous faisons face à des idées fixes peu rassurantes, 
+                comme si la société était incapable d’évoluer sur le sujet. La pensée écologique doit être en mouvement, avancer. 
+                Et je ne pense pas que l’on puisse avancer sans bagage historique, 
+                surtout sur un domaine soumis à une récupération politique croissante.
+                <img src="/img/background/PianoGarden.jpg" alt="Patrick Scheyder" id="imagePatrickScheyder">
+                P. S. : On ne peut pas combattre – même en douceur et sans violence – un système sans avoir de culture. 
+                Les problèmes écologiques auxquels nous faisons face existent pour une raison. 
+                La déforestation subie par l’Angleterre est liée au besoin de charbon, par exemple. 
+                Les grands travaux menés à l’ère industrielle ont instigué une certaine psychologie dont nous sommes les héritiers. 
+                Il est important d’en comprendre les mécanismes pour s’interroger, et ne pas désigner des coupables « pratiques ». Le risque, 
+                c'est de laisser croire qu’il suffit de changer le système d’un coup de baguette magique pour que tout s’arrange. 
+                L’écologie n’est pas une solution miraculeuse : elle permet d’espérer de meilleurs liens entre les humains et la nature, 
+                mais pas de résoudre tous nos problèmes. L’humain a rarement progressé par lui-même : c’est sous la contrainte, notamment naturelle, 
+                qu’il a évolué. Le comprendre, l’accepter, et connaître le passé doit permettre de faire des choix collectifs, en tant qu’espèce. 
+                Et de poser les bonnes questions aux niveaux politiques et économiques.
+                P. S. : De manière générale, la déculturation d’un débat est toujours le meilleur moyen de prendre – ou de garder – le pouvoir. 
+                La Convention citoyenne pour le climat l’illustre parfaitement, et montre à quel point l’éducation au sujet est nécessaire. 
+                Sauf que ce ne sont pas 150 citoyens qui devraient être éduqués, mais 15 millions, au moins.
+                P. S. : Présenter un sujet comme « nouveau », ça met toujours des paillettes dans les yeux. L’écologie est un sujet « nouveau », 
+                du « nouveau monde ». Ça crée des opportunités, attire le regard. C’est, selon moi, néfaste. 
+                Cela inscrit l’écologie dans une dictature de l’immédiateté, dans laquelle les scientifiques sont mal à l’aise. 
+                Tout ce qui pollue aujourd’hui a été inventé ou découvert par des scientifiques : le plastique, 
+                les énergies fossiles… ils se retrouvent donc dans une position délicate : celle de devoir décrier tout ce qui a été synonyme de progrès 
+                et de trouver des solutions très rapidement.
+                P. S. : C’est l’autre facette du mot « nouveauté ». D’un côté, il attise la curiosité, 
+                de l’autre, il fait peur. La réalité, c’est que la majorité des gens ont peur. 
+                Si l’on prend la peine de leur montrer que l’on réfléchit à des solutions écologiques depuis des années, 
+                qu’il y a des solutions viables, une antériorité, ça calme le débat. C’est aussi pour cela qu’il est important de détemporaliser la réflexion. 
+                Enlever les notions de temps et d’espace pour mieux les retrouver après.
+                P. S. : En premier lieu, je parlerai de la décadence de l’empire romain. 
+                À leur arrivée en Italie, les Barbares ont découvert une campagne à demi ensauvagée. 
+                Les villas, grandes propriétés agricoles de plusieurs centaines d’hectares, sont mal tenues. 
+                Trop d’esclaves, mal gérés, 
+                de riches propriétaires fonciers qui ont fui la campagne pour rejoindre les divertissements et le confort de la ville font des campagnes 
+                des lieux en déshérence. Il serait intéressant de faire le parallèle avec les campagnes françaises : de moins en moins exploitées, 
+                les champs sont laissés à l’abandon faute d’agriculteurs. On parle de « zones blanches » agricoles qui se multiplient, 
+                à la faveur des grandes métropoles qui concentrent le confort et les distractions. 
+                Certains semblent avoir conscience que la répétition de ce cycle n’est pas vertueuse : de jeunes gens cherchent à se réapproprier la terre, 
+                faire du bio, de la permaculture, construire des cabanes, 
+                vivre autrement… et ne pas se faire happer par la ville. L’histoire et le bon sens leur donnent raison. Si on abandonne la terre, 
+                on abandonne notre culture.
+
+                J’aimerais aussi citer un autre exemple, plus récent : celui de George Sand, 
+                grande précurseuse de l’éco-féminisme et très engagée dans la protection de la forêt de Fontainebleau. Très tôt, 
+                <img src="/img/background/entete.jpg" alt="La Foret de fontainebleau" id="imageFontainebleauForet">
+                l’État trouvait que cette belle forêt ne rapportait pas assez et procédait à l’abattage de vieux chênes pour planter des pieds de pin maritime, 
+                de meilleur rapport. Dès 1840, 
+                les peintres de l’école de Barbizon font de la résistance – une sorte de ZAD avant l’heure… ces trentenaires arrachaient la nuit les plantations, 
+                peignaient de vieux arbres, et les montraient aux Parisiens dans des expositions. Cette habile campagne de lobbying a abouti : après un procès, 
+                les peintres gagnent et obtiennent la création de la première réserve naturelle du monde. 
+                Le répit est de courte durée : l’État revient à la charge en 1872. 
+                George Sand en profite pour écrire un manifeste de 12 pages : elle y parle de déforestation, de l’Amazonie qui disparaît, 
+                et annonce que si l’on continue sur cette lancée, nous assécherons la Terre de façon irrémédiable. 
+                Elle intime les Hommes à apprendre à moins exiger de la Terre, à réfréner leurs besoins. Elle obtient gain de cause et, après 32 ans de lutte, 
+                Fontainebleau est sauvée.
+                P. S. : Il y a un vrai momentum, encore plus après la crise du Covid. 
+                Les gens perçoivent le lien entre crise sanitaire et crise écologique – qui s’avère vrai depuis le Néolithique. 
+                Nous pouvons apaiser les choses : il suffit de donner matière à des réflexions qui ne soient pas partisanes…
+            </p>
+        </div>
+    </main>
+    <footer>
+        <!-- [ container of the different footer link ] -->
+        <div id="pageLinks">
+            <h3>Les differente page</h3>
+            <a href="index.html">Accueil</a>
+            <a href="env.html">Evenement</a>
+            <a href="histoire.html">L'histoire</a>
+        </div>
+        <!-- [ container of the different footer link ] -->
+        <div id="credits">
+            <h3>Les credits</h3>
+            <a href="https://pixabay.com/fr/" target= "_blank">illustration de la page</a>
+            <a href="https://css.gg/app" target= "_blank">les SVG</a>
+            <a href="https://fonts.google.com/" target= "_blank">le font</a>
+        </div>
+        <!-- [ container of the different footer link ] -->
+        <div id="moreInfo">
+            <h3>Plus d'information</h3>
+            <a href="">Condition d'utilisation</a>
+            <a href="env.html#sectionContact">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,432 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Initialize margins and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* make sure that the body takes the full size of the screen */
+body {
+    height: 100vh;
+}
+/* add all the same style between element P and A */
+p, a {
+    font-family: 'Alice', serif;
+    font-family: 'Libre Bodoni', serif;
+}
+/* Put the elements of the page header one below the other with FLLEX */
+header {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+/* Position the header logo on the left and the header social network on the right */
+#BoxLogoAndSocialNetwork {
+    display: flex;
+    justify-content: space-between;
+}
+/* Peel the logo off the header from the edge of the page */
+#Logo {
+    margin-left: 50px;
+}
+/* peel the social networks off the header of the edge of the page, then center them */
+#BoxSocialNetwork {
+    display: flex;
+    align-items: center;
+
+    margin-right: 50px;
+}
+/* agrendate HR at height */
+#HrSocialNetwork {
+    height: 10px;
+}
+/* Add a margin to the left and right of each social network logo */
+#iconSocialNetwork {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* on all A links in the BoxSocialNetwork container add a height of 15 px and remove the style of the default A links, add the color in black */
+#BoxSocialNetwork a {
+    height: 15px;
+
+    text-decoration: none;
+    color: black;
+}
+/* add a margin in height for the container of the Navigation bar, and put the Navigation bar in the foreground */
+nav {
+    margin-top: 20px;
+
+    z-index: 3;
+}
+/* container of the navigation bar button for mobile mode, */
+#boxButtonMobileNavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+
+    background: rgb(93,144,21);
+    background: linear-gradient(323deg, rgba(93,144,21,1) 22%, rgba(122,190,28,1) 100%);
+}
+/* Bar navigation button for mobile */
+#ButtonMobileNavBar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+    background-color: white;
+}
+/* Checkbox that checks whether the mobile menu is open or close */
+#checkBoxButtonMobileNavBar {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    bottom: 44px;
+
+    opacity: 0%;
+}
+/* If the checkbox and check then we display the menu of the navigation bar */
+#checkBoxButtonMobileNavBar:checked + #boxLink {
+    display: flex;
+}
+/* If the checkbox and check we play the animation of the navigation bar 1 */
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar1 {
+    animation-name: NavBarOpacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* If the checkbox and check we play the animation of the navigation bar 2 */
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar2 {
+    animation-name: NavBarOpacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/* If the checkbox and check we play the animation of the navigation bar 3 */
+#checkBoxButtonMobileNavBar:checked + #boxLink #linkNavBar3 {
+    animation-name: NavBarOpacity;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+/* Navigation Bar menu container */
+#boxLink {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+
+    right: 150px;
+    bottom: 40px;
+
+    width: 340px;
+}
+/* Mobile Bar navigation menu links */
+#linkNavBar1 {
+    margin-top: 5px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+
+#linkNavBar2 {
+    margin-top: 10px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+
+#linkNavBar3 {
+    margin-top: 10px;
+    padding: 20px 140px 20px 140px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(93,144,21,1);
+}
+/* Animation of the mobile bar navigation menu keyframes */
+@keyframes NavBarOpacity {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+/* Container Navigation Bar for PC */
+#boxButtonDesktopNavBar {
+    position: relative;
+
+    top: 20px;
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60px;
+    width: 80%;
+
+    border-radius: 25px;
+    background: rgb(93,144,21);
+    background: linear-gradient(323deg, rgba(93,144,21,1) 22%, rgba(122,190,28,1) 100%);
+}
+/* The menu links of the navigation bar for pc */
+#linkNavBarDesktop1 {
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+#linkNavBarDesktop1:hover {
+    font-size: 18px;
+}
+
+#linkNavBarDesktop2 {
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+#linkNavBarDesktop3:hover {
+    font-size: 18px;
+}
+
+#linkNavBarDesktop3 {
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+#linkNavBarDesktop2:hover {
+    font-size: 18px;
+}
+/* Page illustration */
+#backGround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    bottom: 50px;
+
+    z-index: 1;
+
+    height: 500px;
+    width: 100%;
+
+    background-image: url('../img/background/nature.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* Description container in Page Illustration */
+#boxBackgroundDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleH1 {
+    text-align: center;
+    font-size: 35px;
+
+    color: white;
+}
+/* Page title */
+#paragrapheDescriptif {
+    font-size: 17px;
+    
+    color: white;
+}
+/* The page illustration button */
+#boxButtonBackground {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 290px;
+}
+
+#boxButtonBackground a {
+    padding: 10px 20px 10px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#boxButtonBackground a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 3px solid white;
+}
+/* Main content of the page */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleInfoEnvironement {
+    margin-bottom: 40px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+    background-color: rgb(93,144,21);
+}
+
+#boxHistoire {
+    display: flex;
+    justify-content: center;
+}
+
+#textHistoire {
+    width: 80%;
+    
+}
+
+#imagePatrickScheyder {
+    padding: 10px 10px 10px 0px;
+
+    width: 350px;
+    height: 200px;
+
+    float: left;
+}
+
+#imageFontainebleauForet {
+    padding: 10px 0px 10px 10px;
+
+    width: 350px;
+    height: 200px;
+
+    float: right;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 50px;
+
+    
+    background-color: rgb(93,144,21);
+    background-color: linear-gradient(323deg, rgba(93,144,21,1) 22%, rgba(122,190,28,1) 100%);
+}
+
+#pageLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#pageLinks h3 {
+    text-decoration: none;
+}
+
+#pageLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+#credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#credits a {
+    text-decoration: none;
+    color: white;
+}
+
+#moreInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#moreInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+#boxHistoire {
+    
+}
+
+/* Adaptation to the big screen */
+@media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boxButtonMobileNavBar {
+        display: none;
+    }
+
+    #boxButtonDesktopNavBar {
+        display: flex;
+    }
+
+    #backGround {
+        background-position: bottom;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+  }
